@@ -98,7 +98,7 @@ trait TranslationMethods
                 continue;
             }
 
-            if (!empty($value)) {
+            if (is_bool($value) || !empty($value)) {
                 return false;
             }
         }
